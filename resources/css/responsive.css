@@ -1,0 +1,866 @@
+/*		Xl-Normal Laptop/Desktop Layout: 1200px. 
+-------------------------------------------------------------------------------
+*/
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+
+}
+/*		Lg Normal Deafult Layout: 992px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------  */
+@media (min-width: 992px) and (max-width: 1200px) {
+.logo-area {
+	font-size: 20px;
+}	
+.main-manu-area li {
+	margin-left: 10px;
+}
+
+.main-manu-area ul li a {
+	font-size: 14px;
+}
+
+.registation-menu ul li a {
+	font-size: 14px;
+}
+.banner-section {
+	height: 500px;
+	padding: 100px 50px;
+}
+.job-content h4 {
+	font-size: 16px;
+}
+.job-menu li {
+	font-size: 13px;
+}
+.job-menu.job-menu-border li {
+	margin-left: 0;
+	font-size: 15px;
+}
+.single-tesimonial-item p {
+	font-size: 20px;
+}
+
+.footer-content p {
+	font-size: 15px;
+}
+
+
+.job-application.titlebar-section {
+	margin-bottom: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*		Md Tablet Layout: 992px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------  */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.header-area{
+  display: none;
+  visibility: hidden;
+}
+
+/*responsive nav style*/
+
+.mobile-menu {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #00BDEA;
+  z-index: 9999;
+  height: 80px;
+}
+.mobile-menu .dropdown-item {
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  font-weight: 400;
+  white-space: nowrap;
+  background-color: #58BA2B;
+  border-top: 1px solid #CF8F23;
+  padding: 12px 0;
+  margin-bottom: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid #CF8F23;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+.mobile-menu .dropdown-item:last-child {
+  margin-bottom: 0;
+}
+.mobile-menu .dropdown-item:hover {
+  border-bottom: 0;
+  background: #34495E;
+}
+.nav-bar img {
+  float: left;
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-bar .fa-bars {
+  display: block;
+  color: #fff;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+  top: -15px;
+  position: relative;
+  right: 30px;
+}
+
+.mobile-menu nav {
+  width: 50%;
+  height: auto;
+  position: fixed;
+  right: 100%;
+  top : 80px;
+  overflow: hidden;
+  height: auto;
+  text-align: center;
+}
+
+.mobile-menu nav ul li {
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, .5);
+  width: 100%;
+  background: #E600C3;
+}
+
+.mobile-menu ul li a { display: block; }
+
+.mobile-menu nav ul li .children {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.mobile-menu ul li .fa-chevron-down {
+  color: #ddd;
+  font-size: 15px;
+  margin-left: 15px;
+}
+.mobile-menu nav ul li:hover .children { display: none; }
+
+.mobile-menu nav ul li ul li:first-child { border-top: 1px solid #ffffff99; }
+
+.mobile-menu nav ul li .children span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.mobile-menu nav ul li .children a {
+  margin-left: 10px;
+  padding: 5px 0;
+}
+.nav-bar-logo {
+	position: relative;
+	top: 23px;
+	left: 15px;
+}
+.mobile-menu nav ul li .fa-angle-down {
+  position: relative;
+  top: 3px;
+}
+
+
+.banner-section {
+	height: 560px;
+	padding: 150px 130px;
+}
+
+.form-check-area input[type="text"] {
+	margin-bottom: 15px;
+}
+
+.form-submit-btn {
+	position: relative;
+	float: right;
+}
+.banner-content {
+	position: absolute;
+	bottom: -50px;
+}
+
+
+
+
+.Categories-icon {
+	font-size: 40px;
+}
+
+.Categories-content p {
+	font-size: 20px;
+	font-weight: 600;
+}
+.job-section h2 {
+	margin-top: 20px;
+}
+.single-job-item {
+	text-align: center;
+}
+
+.testimonial-bg-1 {
+	margin-top: 30px;
+}
+
+.single-tesimonial-item p {
+	font-size: 15px;
+}
+.cta-area h2 {
+	font-size: 28px;
+	text-align: left;
+}
+
+.homepage-post-content .card {
+	margin-bottom: 30px;
+}
+
+.homepage-post-content a.btn-card {
+	width: 150px;
+	height: 40px;
+}
+.footer-heading h2 {
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.footer-menu {
+	margin-left: 40px;
+}
+
+.footer-content {
+	margin-left: 40px;
+}
+
+a.footer-btn {
+	margin-left: 40px;
+}
+
+.footer-area {
+	padding: 18px;
+	margin-top: 10px;
+}
+
+/* Page one responsive */
+
+.page-one .btn-titlebar {
+	float: right;
+	margin-top: 12px;
+}
+
+.page-one.titlebar-section h2 span {
+	right: 100px;
+}
+
+.page-two.titlebar-section {
+	padding: 71px 0;
+	height: auto;
+	margin-top: 45px;
+}
+
+
+.author-img {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.job-menu li {
+	margin-left: 0;
+	margin-bottom: 4px;
+}
+.page-three .single-job-posts {
+	height: auto;
+	padding: 10px 0;
+}
+.input-field.sort-by select {
+	font-size: 13px;
+}
+.input-field.loaction select {
+	font-size: 13px;
+}
+.input-field.loaction p {
+right: 43%;
+}
+.input-field.loaction input {
+	font-size: 14px;
+}
+.job-application.titlebar-section {
+	margin-bottom: 22px;
+}
+.applicant-customize ul li a {
+	font-size: 10px;
+}
+
+.resume-hero .resume-btn-hero-top-right {
+	margin: 0;
+}
+
+
+.resume-btn {
+	margin: 40px auto;
+}
+
+.page-one.page-two.resume-hero {
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*		Small Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------  */
+
+@media (max-width: 767px) {
+
+
+.header-area{
+  display: none;
+  visibility: hidden;
+}
+
+/*responsive nav style*/
+
+.mobile-menu {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #00BDEA;
+  z-index: 9999;
+  height: 80px;
+}
+.mobile-menu .dropdown-item {
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  font-weight: 400;
+  white-space: nowrap;
+  background-color: #58BA2B;
+  border-top: 1px solid #CF8F23;
+  padding: 12px 0;
+  margin-bottom: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 1px solid #CF8F23;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+.mobile-menu .dropdown-item:last-child {
+  margin-bottom: 0;
+}
+.mobile-menu .dropdown-item:hover {
+  border-bottom: 0;
+  background: #34495E;
+}
+.nav-bar img {
+  float: left;
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-bar .fa-bars {
+  display: block;
+  color: #fff;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+  top: -15px;
+  position: relative;
+  right: 30px;
+}
+.mobile-menu nav {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	right: 100%;
+	top: 80px;
+	overflow: hidden;
+	height: auto;
+	text-align: center;
+}
+
+.mobile-menu nav ul li {
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, .5);
+  width: 100%;
+  background: #E600C3 !important;
+}
+
+.mobile-menu ul li a { display: block; }
+
+.mobile-menu nav ul li .children {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.mobile-menu ul li .fa-chevron-down {
+  color: #ddd;
+  font-size: 15px;
+  margin-left: 15px;
+}
+.mobile-menu nav ul li:hover .children { display: none; }
+
+.mobile-menu nav ul li ul li:first-child { border-top: 1px solid #ffffff99; }
+
+.mobile-menu nav ul li .children span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.mobile-menu nav ul li .children a {
+  margin-left: 10px;
+  padding: 5px 0;
+}
+.nav-bar-logo {
+	position: relative;
+	top: 23px;
+	left: 15px;
+}
+.mobile-menu nav ul li .fa-angle-down {
+  position: relative;
+  top: 3px;
+}
+.banner-section {
+	height: 500px;
+	padding: 90px 0;
+}
+.form-check-area input[type="text"] {
+	margin-bottom: 10px;
+}
+.form-icon-absolute {
+	background: #fff;
+}
+.banner-content p, .banner-content button {
+	display: none;
+}
+.banner-section h3 {
+	margin-top: 65px;
+}
+
+.single-job-posts {
+	height: auto;
+}
+.author-img {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.single-job-posts .job-menu li {
+	margin-left: 0;
+}
+.job-content h4 span {
+	top: 27px;
+	right: 30px;
+}
+.single-job-posts {
+
+	padding: 14px 20px;
+}
+.job-menu-border {
+	margin-left: 0;
+}
+
+.testimonial-bg-1 {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.single-tesimonial-item p {
+	font-size: 13px;
+}
+
+.cta-area {
+	padding: 20px 0;
+}
+.cta-area h2 {
+	font-size: 18px;
+	text-align: left;
+}
+a.cta-btn {
+	float: right;
+	margin-top: 10px;
+}
+
+.homepage-post-content .card {
+	margin-bottom: 15px;
+}
+.footer-area {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.footer-heading h2 {
+	text-align: center;
+}
+a.footer-btn {
+	margin-bottom: 20px;
+}
+
+.footer-menu ul li {
+	text-align: center;
+	font-size: 20px;
+}
+.footer-content p {
+	text-align: center;
+}
+
+.page-one.titlebar-section h2 span {
+display: none;
+}
+.page-one .btn-titlebar {
+
+	margin-top: 23px;
+}
+
+.page-one.titlebar-section {
+	padding-bottom: 40px;
+}
+
+
+.one-page-job-aply {
+	margin-top: 6px;
+}
+.footer-social-menu ul li a {
+	color: #fff;
+	display: block;
+	border-radius: 50%;
+	width: 30px;
+	height: 32px;
+	line-height: 30px;
+}
+
+
+.page-two.titlebar-section {
+	padding: 71px 0;
+	height: auto;
+	margin-top: 45px;
+}
+
+.page-three.titlebar-section h2 {
+	font-size: 24px;
+}
+.page-three .btn-category-title {
+	margin-top: 30px;
+}
+.page-three.titlebar-section {
+	padding-bottom: 30px;
+}
+
+.page-three.form-check-area input[type="text"] {
+	font-size: 14px;
+	padding: 17px;
+}
+.page-three.form-check-area {
+	margin-top: 20px;
+	margin-bottom: -22px;
+}
+
+.job-posts-more-btn {
+	padding: 20px 0;
+	padding-bottom: 0;
+}
+
+.job-posts-more-btn .Previous {
+
+}
+.job-posts-more-btn .next {
+	float: left;
+	margin-top: 10px;
+}
+.one-two-btn {
+
+}
+
+.max-w{
+	max-width: 100% !important;
+}
+
+
+.job-application.titlebar-section {
+	margin-bottom: 22px;
+}
+
+
+.table-image td, .table-image th {
+  vertical-align: middle;
+}
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;}
+
+.applicant-customize {
+	margin-top: 30px;
+}
+.applicant-customize ul li {
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+
+
+.applicant-customize ul li a {
+	padding: 8px;
+	font-size: 11px;
+	font-weight: 400;
+}
+
+
+.application-feeadback {
+	text-align: center;
+}
+
+.application-date ul li a {
+	padding: 0;
+}
+.applicant-border {
+	padding: 7px 30px;
+}
+.border-info-pd {
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+}
+
+.page-one.page-two.resume-hero {
+	height: auto;
+}
+.resume-btn {
+	margin-top: 200px;
+	padding: 87px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.resume-hero .resume-btn-hero-top-right {
+	
+}
+
+.resume-btn-hero-right {
+	float: right;
+}
+.resume-hero .resume-btn-hero-top-right {
+	margin-right: 76px;
+}
+
+.btn-category {
+	width: 180px;
+	margin: 40px auto;
+	border: 0;
+	background: #58ba2b;
+	height: auto;
+	padding: 10px;
+	display: block;
+	text-align: center !important;
+}
+
+
+
+
+
+	
+
+}
+/*		sm Wide Mobile Layout : 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+	
+.job-content h4 span {
+	top: 0px;
+	right: -50px;
+}
+.cta-area h2 {
+	padding-top: 22px;
+}
+.homepage-post-content a.btn-card {
+	float: right;
+	margin-top: 7px;
+}
+
+
+.job-posts-more-btn .next {
+	float: right;
+	margin-top: 0;
+	position: relative;
+	top: 0;
+}
+
+.page-three .btn-category-title {
+	margin-top: 8px;
+	width: 100%;
+	font-size: 15px;
+}
+.table-responsive {
+	overflow-x: auto;
+}
+.applicant-customize ul li a {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.applicant-customize ul li {
+	float: left;
+	margin-left: 15px;
+}
+.application-feeadback {
+	text-align: left;
+}
+.application-date {
+	width: 100%;
+	margin-top: -40px;
+}
+
+.resume-hero .resume-btn-hero-top-right {
+	margin: 0;
+}
+
+.resume-btn-hero-right {
+	position: absolute;
+	left: 194px;
+	top: -10px;
+}
+.resume-btn-hero-top-right {
+	margin: 0;
+	position: absolute;
+	top: 0px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 590px) {
+.job-posts-more-btn .next {
+	top: -81px;
+}
+.one-two-btn {
+	margin-top: 10px;
+	text-align: center;
+	position: relative;
+	right: -168px;
+	top: -46px;
+}
+
+
+.page-three .btn-category-title {
+	margin-top: 8px;
+	width: 100%;
+	font-size: 15px;
+}
+
+.applicant-customize ul li a {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.applicant-customize ul li {
+	float: left;
+	margin-left: 15px;
+}
+.application-feeadback {
+	text-align: left;
+}
+.application-date {
+	width: 100%;
+	margin-top: -40px;
+}
+.resume-btn {
+	margin-top: 125px;
+	padding: 40px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	}
+

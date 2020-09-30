@@ -1,0 +1,1790 @@
+/* Template Name:Traffic; */
+
+/* 
+======================================================
+CSS Index:
+
+*Base CSS*
+
+
+============================================================================================================================================ */
+
+/* ==========================================================================
+                     Base styles: opinionated defaults
+   ========================================================================== */
+
+
+/*======================================================================================
+ *Base CSS*
+=======================================================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body{
+   font-family: 'lato';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+font-family: 'Lato', sans-serif;
+}
+
+a:visited,a:focus,a:link{
+  text-decoration: none;
+
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+button:focus,a:link,a:visited,a:focus{
+  text-decoration: none;
+  outline: none;
+  color: #323232;
+}
+
+ul li{
+  list-style: none;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+/*
+      * Customize the background color to match your design.*
+ */
+
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*==========================================================================
+ *All Customize CSS*
+===========================================================================*/
+
+/*==========================================================================
+ *HEADER CSS*
+===========================================================================*/
+
+.header-area {
+  background: #fff;
+  padding: 25px 0;
+  height: 86px;
+  color: #323232;
+}
+.header-area.fixed-top {
+  padding: 15px 0;
+  height: auto;
+}
+.logo-area {
+  color: #323232;
+  font-size: 25px;
+  font-family: lato;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-top: -7px;
+}
+
+.logo-area img{
+  margin-right: 5px;
+
+}
+
+.main-manu-area li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.main-manu-area li:first-child{
+  margin-left: 0;
+}
+
+.main-manu-area ul li a {
+  padding: 11px 14px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Montserrat;
+}
+
+
+
+.main-manu-area ul li a:hover{
+  background: #58ba2b;color: #fff;
+}
+
+
+
+.active-bg {
+  background: #58ba2b !important;
+  color: #fff !important;
+}
+
+
+.main-manu-area ul li .fa-chevron-down {
+  color: #ddd;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.dropdown-item:hover {
+background: #58ba2b;color: #fff;
+}
+
+/* .dropdown a{background: #fff;border: 0;margin-top: -10px;} */
+
+.dropdown-btn {
+background: transparent;
+}
+.dropdown-item:last-child {
+  border-bottom: 0;
+}
+/*==============================================================================================================
+   * Mobile Menu CSS *
+=================================================================================================================*/
+
+.mobile-menu { width: 100%; }
+
+.mobile-menu { display: none; }
+
+.mobile-menu nav {
+  background: #0000EF;
+  z-index: 1000;
+  width: 100%;
+  margin: auto;
+}
+.mobile-menu nav ul { list-style: none; }
+
+.mobile-menu nav ul li {
+  float: left;
+  position: relative;
+}
+.mobile-menu nav ul li:last-child{
+  border-bottom:0;
+}
+.mobile-menu nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mobile-menu nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: tahoma;
+  text-transform: uppercase;
+}
+
+.mobile-menu nav ul li:hover { background: #34495e; }
+
+.mobile-menu nav ul li:hover i { color: yellow; }
+
+.mobile-menu nav ul li i { margin-right: 10px; }
+
+.mobile-menu nav ul li:hover .children { display: block; }
+
+.mobile-menu nav ul li .children {
+  display: none;
+  background: #8e44ad;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+.mobile-menu nav ul li .children span { display: none; }
+
+.mobile-menu nav ul li .children li {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ffffff99;
+}
+
+.mobile-menu nav ul li .children li a { margin-left: 30px; }
+
+.mobile-menu nav ul li .fa-angle-down {
+  position: relative;
+  top: 3px;
+}
+
+.mobile-menu .dropdown-btn {
+    background: #00BDEA;
+}
+
+
+
+
+/*======================
+ *registation-menu CSS*
+=======================*/
+
+
+.registation-menu ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.registation-menu ul li:last-child{
+  margin-right: 0;
+}
+.registation-menu ul li .rg-icon {
+  margin-right: 6px;
+}
+
+.registation-menu ul li a {
+  padding: 11px 14px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.registation-menu ul li a:hover{
+ 
+background: #58ba2b;
+color: #fff;
+}
+/*======================
+ *banner-section CSS*
+=======================*/
+.banner-section {
+  width: 100%;
+  height: 600px;
+  background: #aaaaaa;
+  padding: 160px 200px;
+}
+.banner-section h2 {
+  font-size: 46px;
+  color: #fff;
+  font-weight: 700;
+  font-family: lato;
+}
+.form-check-area {
+  margin-top: 34px;
+}
+.form-check-area input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+}
+.form-icon-absolute {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  color: #AAAAAA;
+  font-size: 20px;
+}
+.form-submit-btn {
+  position: absolute;
+  top: 0;
+  background: #58BA2B;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  width: 90px;
+  font-size: 20px;
+}
+
+.banner-content button:hover {
+  background: #58BA2B;
+}
+
+.banner-section p {
+  color: #fff;
+  margin-top: 10px;
+}
+.banner-section p button {
+  border: 1px solid #fff;
+  padding: 3px 9px;
+  color: #fff;
+  background: #c8c8c882;
+  margin: 0 5px;
+}
+
+.banner-section h3 {
+  font-size: 24px;
+  color: #fff;
+  font-family: lato;
+  letter-spacing: 1px;
+  margin-top: 32px;
+}
+
+.banner-section h3 span {
+  font-size: 30px;
+  font-weight: 700;
+}
+.banner-section {
+  background-image: url('img/banner-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-section:after {
+  position: absolute;
+  background: #323232;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+
+
+/*======================
+ *categories-section CSS*
+=======================*/
+
+
+.single-categories-item {
+  padding: 40px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-color: #E1E1E1;
+}
+
+.Categories-item .pad-0{
+  padding: 0;
+}
+
+.single-categories-item:hover{
+  border: 1px solid #58ba2b;
+}
+.Categories-icon {
+  color: #58ba2b;
+  font-size: 25px;
+}
+.Categories-content p {
+  color: #605f5f;
+  font-size: 14px;
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+.Categories-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0;
+  padding: 0;
+}
+.btn-category {
+  width: 290px;
+  margin: 40px auto;
+  border: 0;
+  background: #58ba2b;
+  height: auto;
+  padding: 10px 15px;
+  display: block;
+}
+.btn-category a {
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Montserrat;
+}
+
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0:last-child > .single-categories-item.list-group-item {
+  border-right: 1px solid #e1e1e1;
+}
+
+.row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0 > .single-categories-item.list-group-item {
+  border-right: 1px solid transparent;
+}
+
+.row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0:nth-child(4) > .single-categories-item.list-group-item {
+  border-right: 1px solid #e1e1e1;
+}
+
+.row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0:nth-child(5) > .single-categories-item.list-group-item, .row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0:nth-child(6) > .single-categories-item.list-group-item, .row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0:nth-child(7) > .single-categories-item.list-group-item, .row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0:nth-child(8) > .single-categories-item.list-group-item {
+  border-top: 1px solid transparent;
+}
+
+.row > .col-xl-3.col-lg-3.col-md-6.col-sm-6.text-center.pad-0 > .single-categories-item.list-group-item:hover {
+  border: 1px solid #58ba2b;
+}
+
+/*======================
+ *Recent Job-section CSS*
+=======================*/
+
+
+.single-job-posts .author-img img {
+  width: 60px;
+  height: 65px;
+}
+
+
+.job-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.single-job-posts {
+  width: 100%;
+  height: 140px;
+  padding: 40px 20px;
+  border: 1px solid #aeaeae38;
+}
+
+.single-job-posts:hover {
+  border-color: #58ba2b;
+
+}
+
+.job-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.job-content h4 span {
+  font-size: 11px;
+  position: absolute;
+  background: #186fc9;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  top: -5px;
+}
+.job-menu li {
+  display: inline-block;
+  margin-right: 10px;
+  color: #666666c7;
+}
+.job-icon {
+  margin-right: 8px;
+}
+.bg-gray{
+  background: #F9FFF6;
+}
+
+.single-job-item {
+  font-family: lato;
+  color: #666;
+  background: #FBFBFB;
+  padding: 30px 30px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  border: 1px solid #e0e0e0;
+}
+.single-job-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #323232;
+  margin-bottom: 10px;
+}/* 
+/*==================================
+ *Recent post Carousel-section CSS*
+=====================================*/
+
+
+
+.job-slider button.owl-prev,.job-slider button.owl-next{
+  border: 0;
+  font-size: 30px;
+  background: transparent;
+  color: #b3b3b3;
+  margin: 0 10px;
+}
+
+.job-slider .owl-nav {
+  text-align: right;
+  top: -60px;
+  position: absolute;
+  right: 0;
+}
+
+
+/*==================================
+*testimonial Carousel CSS*
+===================================*/
+
+
+
+.testimonial-bg-1 {
+  background-image: url('img/1.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+.testimonial-bg-1:after {
+  position: absolute;
+  background: #000;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+.single-tesimonial-item p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.single-tesimonial-item h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.testimonial-carousel .owl-dots {
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+.testimonial-carousel button.owl-dot {
+  width: 15px;
+  height: 15px;
+  background: #151515;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.testimonial-carousel .owl-dots button.owl-dot.active {
+
+  background: #fff;
+}
+/*==================================
+        *CTA AREA CSS*
+===================================*/
+
+
+
+.cta-area {
+  background: #58BA2B;
+  padding: 45px 0;
+  color: #fff;
+  font-family: lato;
+}
+.cta-area h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+a.cta-btn {
+  background: #fff;
+  padding: 13px 20px;
+  width: 150px;
+  display: block;
+  text-align: center;
+  color: #58BA2B;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+
+
+/*==================================
+        *Recents Posts CSS*
+===================================*/
+.homepage-post-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.homepage-post-content .card {
+border: 0;
+border-radius: 0;
+}
+
+.card {
+  border-bottom: 1px solid #aaaaaa3d !important;
+  padding-bottom: 40px;
+}
+
+
+
+.homepage-post-content .card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.homepage-post-content .card-body {
+  padding: 0;
+}
+.homepage-post-content a.btn-card {
+  background: #58ba2b;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0;
+  margin-top: 25px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.homepage-post-content a.btn-card:hover {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.homepage-post-content .card-title {
+  margin-bottom: 12px;
+  margin-bottom: .75rem;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: lato;
+}
+
+.homepage-post-content .card-date-piker {
+  font-size: 16px;
+  color: #999999;
+}
+
+.homepage-post-content .card-content span {
+  padding-left: 20px;
+  border-left: 1px solid #b0b0b0;
+}
+.homepage-post-content .card-content span:first-child {
+	padding-left: 0;
+	border: none;
+	padding-right: 20px;
+}
+.homepage-post-content .card-content p {
+  display: inline-block;
+  margin-right: 20px;
+}
+.homepage-post-content .card-text {
+  color: #999;
+  font-size: 16px;
+  font-family: lato;
+}
+
+/*==================================
+        *Footer Area CSS*
+===================================*/
+.footer-area {
+  background: #202020;
+  color: #999;
+  padding-top: 60px;
+  margin-top: 54px;
+  padding-bottom: 30px;
+}
+.footer-heading h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-content p {
+  font-size: 16px;
+  font-family: lato;
+
+}
+
+a.footer-btn{
+    background: #58ba2b;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0;
+  margin-top: 25px;
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    line-height: 31px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+a.footer-btn:hover {
+  background: #fff;
+  color: #58ba2b;
+}
+.footer-menu ul li a {
+  color: #999;
+}
+.footer-menu ul li a:hover{
+  color: #58ba2b;
+}
+
+.footer-menu ul li a .fa-caret-right {
+  margin-right: 6px;
+  font-size: 12px;
+}
+.footer-menu ul li {
+  margin-bottom: 3px;
+}
+
+.footer-border {
+  border-top: 1px solid #aeaeae45;
+  padding-bottom: 40px;
+}
+/*==================================
+        *Copy Right Area CSS*
+===================================*/
+
+.copy-right-area {
+  background: #202020;
+  color: #999;
+  padding: 40px;
+}
+.copy-right-area h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.footer-social-menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #999;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-social-menu ul li:hover {
+background: #58ba2b;
+}
+
+.footer-social-menu ul li a {
+  color: #fff;
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.copy-right-area p span a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.copy-right-area p span a:hover {
+  color: #58ba2b;
+}
+
+
+/*==================================================================================================
+                                         *Page One CSS Here*
+=====================================================================================================*/
+
+/*==========================================
+          *Title bar CSS*
+==============================================*/
+
+.page-one.titlebar-section {
+  background: #aaa;
+  padding: 98px 0;
+}
+.page-one.titlebar-section p {
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+}
+.page-one.titlebar-section h2 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  font-family: lato;
+}
+.page-one.titlebar-section h2 span {
+  position: absolute;
+  top: 35px;
+  right: -50px;
+  background: #186fc9;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 12px;
+  width: 90px;
+  height: 30px;
+  line-height: 10px;
+  text-align: center;
+}
+.btn-category.btn-titlebar:hover {
+  background: #58BA2B;
+  color: #fff;
+}
+
+.btn-category.btn-titlebar:hover a{
+  color: #fff;
+}
+
+.page-one .btn-titlebar {
+  background: #fff;
+  width: 216px;
+  height: 50px;
+  margin: 0px auto;
+}
+.page-one .btn-titlebar a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 38px;
+  display: block;
+}
+
+
+
+
+/*==================================
+  *Company Description CSS*
+=======================================*/
+
+
+
+
+.page-one .company-image img {
+  width: 100px;
+  height: 100px;
+  margin: 60px 0;
+  position: relative;
+}
+.page-one .company-author-name {
+  position: absolute;
+  top: 90px;
+  left: 140px;
+}
+.page-one .company-author-name h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #323232;
+}
+.page-one .company-author-name span {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #666;
+}
+.page-one .company-author-name span .fa-fedora {
+  margin-right: 5px;
+  -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+}
+
+
+
+.page-one .company-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 30px;
+}
+.page-one .company-service-list li .fa-square {
+  font-size: 7px;
+  color: #58BA2B;
+  text-align: center;
+  position: relative;
+  top: 22px;
+}
+
+
+.page-one .company-service-list li span {
+  margin-left: 14px;
+  display: inline-block;
+}
+
+.page-one .company-service-square li .fa-square {
+  font-size: 7px;
+  color: #58BA2B;
+  text-align: center;
+  position: relative;
+  top: -4px;
+  margin-right: 10px;
+}
+
+
+.page-one .company-service-square li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.page-one .company-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #333;
+}
+
+
+/*==================================
+  *Company Description SideBar CSS*
+=======================================*/
+
+.one-page-job-aply {
+  margin-top: 60px;
+}
+.one-page-job-aply h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+
+.sidebar-job-post-area {
+  background: #fbfbfb;
+  padding: 38px;
+  padding-bottom: 1px;
+  border: 1px solid #E0E0E0;
+}
+.one-page-job-list {
+  position: relative;
+}
+.one-page-job-list li .fa-square ,.one-page-job-list li .sidebar-icon-2{
+  position: absolute;
+  font-size: 7px;
+  color: #58BA2B;
+  position: absolute;
+  margin-top: 9px;
+}
+.one-page-job-list li h5 {
+  position: relative;
+  margin-left: 18px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: lato;
+}
+
+.one-page-job-list li h5 span {
+  display: block;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+
+
+/*==================================================================================================
+                                         *Page two CSS Here*
+=====================================================================================================*/
+
+
+.page-two.titlebar-section {
+  background: #f6f6f6;
+  padding: 46px 0;
+  height: 160px;
+}
+
+
+.one-page-job-list li .sidebar-icon-map{
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+
+.page-two .btn-titlebar a {
+  color: #fff;
+}
+
+.page-two .btn-titlebar{
+  background: #444;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.page-two .btn-titlebar:hover{
+  background: #58BA2B;
+}
+
+
+.page-two.titlebar-section h2 {
+  color: #333;
+  font-size: 28px;
+}
+.page-two.titlebar-section p {
+  font-size: 18px;
+  color: #888;
+}
+.page-two.titlebar-section h2 span {
+  top: 27px;
+  position: absolute;
+  right: 43px;
+}
+
+
+
+
+/*==================================================================================================
+                                         *Page Three CSS Here*
+=====================================================================================================*/
+
+
+/* title bar css */
+
+
+.btn-category-title {
+  width: 216px;
+  margin: 0px auto;
+  border: 0;
+  background: #58ba2b;
+  height: 46px;
+  padding: 10px 6px;
+}
+.btn-category-title a {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}
+
+/* form css */
+
+.page-three.form-check-area input[type="text"] {
+  border: 1px solid #aaa;
+  background: #fcfcfc;
+  color: #323232;
+}
+.page-three .form-submit-btn {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  font-size: 20px;
+  right: 15px;
+}
+/* job post css */
+
+.page-three .single-job-posts {
+  height: auto;
+}
+.page-three .single-job-posts p{
+  color: #666;
+  font-size: 16px;
+}
+.page-three.recent-job-post {
+  margin-top: 50px;
+}
+
+/* job-posts-more-btn */
+
+.one-two-btn {
+  margin-top: 10px;
+  text-align: center;
+}
+.job-posts-more-btn {
+  padding: 40px 0 50px 0;
+}
+
+.job-posts-more-btn .Previous,.job-posts-more-btn .next{
+  font-size: 14px;
+  font-weight: 700;
+  font-family: lato;
+  background: #f2f2f2;
+  padding: 14px;
+  color: #808080;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: inline-block;
+}
+.job-posts-more-btn a:hover {
+  background: #58BA2B;
+  color: #fff;
+}
+
+.serial-btn {
+  padding: 7px 14px;
+  margin-right: 5px;
+  background: #F0F0F0;
+  color: #323232;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0;
+}
+.input-field.sort-by select {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  color: #808080;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #F7F7F7;
+}
+
+
+.select-css {
+    display: block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width%3D"292.4" height%3D"292.4"%3E%3Cpath fill%3D"graytext" d%3D"M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"%2F%3E%3C%2Fsvg%3E'), -webkit-linear-gradient(top, #fcfcfc 0%,#fcfcfc 100%);
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width%3D"292.4" height%3D"292.4"%3E%3Cpath fill%3D"graytext" d%3D"M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #fcfcfc 0%,#fcfcfc 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.2em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+.select-css option {
+    font-weight:normal;
+}
+
+.form-area-sidebar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #d0d0d0;
+  text-transform: capitalize;
+}
+.input-field.loaction {
+  position: relative;
+}
+.input-field.loaction select {
+  width: 40%;
+  color: #666;
+  text-transform: capitalize;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  position: relative;
+}
+.input-field.loaction p {
+  position: absolute;
+  right: 45%;
+  top: 10px;
+  color: #666;
+  font-size: 15px;
+}
+.input-field.loaction input {
+  position: absolute;
+  width: 40%;
+  right: 0;
+  top: 0px;
+}
+.page-three.sidebar-area label {
+  color: #666;
+}
+
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 20px; height: 20px;
+  border: 2px solid #d0d0d0;
+  background: #fff;
+  border-radius: 0;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '\2713\0020';
+  position: absolute;
+  top: 0; left: 0;
+  font-size: 20px;
+  line-height: 0.8;
+  color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+  background: #58BA2B;
+  border-radius: 0;
+  width: 20px;
+  height: 20px;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transform: scale(0);
+      transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: scale(1);
+      transform: scale(1);
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #58BA2B!important;
+}
+
+a.sidebar-filter-btn {
+  width: 90px;
+  height: 45px;
+  background: #58ba2b;
+  padding: 10px 12px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin: 15px 0;
+}
+
+
+
+
+
+/*==================================================================================================
+                                         *Job application CSS Here*
+=====================================================================================================*/
+
+
+.table {
+  margin-top: 25px;
+}
+
+
+.job-application p .fa-chevron-right {
+  font-size: 10px;
+  text-align: center;
+  margin: 0 3px;
+}
+.table th {
+  padding: 20px 15px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #333;
+}
+.table td {
+  padding: 15px 30px;
+  font-size: 15px;
+  color: #333;
+}
+.table td, .table th {
+  vertical-align: top;
+  border-bottom: 1px solid #E9E9E9;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 0;
+}
+.table th span {
+  color: #58ba2b;
+}
+.table-responsive {
+  display: table;
+  width: 100%;
+  overflow-x: auto;
+}
+.post-job-item {
+  margin-top: 20px;
+}
+.job-application .single-job-posts {
+  border-color: transparent;
+}
+.single-job-posts:hover {
+  border-color: #aeaeae54;
+}
+
+.single-job-posts a h4:hover{
+  color: #58ba2b;
+}
+.single-job-posts a:hover{
+  color: #f1630d;
+}
+
+.single-job-posts .full-time-li {
+  color: #186fc9 !important;
+}
+.single-job-posts .Part-Time-li {
+  color: #f1630d !important;
+}
+.single-job-posts .Freelance-li {
+  color: #58ba2b !important;
+}
+
+.job-application .single-job-posts {
+  height: auto;
+}
+
+
+
+.job-application .single-job-posts:nth-child(1),
+.job-application .single-job-posts:nth-child(2) {
+  background: #fefff6;
+}
+
+
+
+.job-application .single-job-posts:nth-child(4) {
+  background: #fbfbfb;
+}
+
+
+.job-menu li {
+  margin-left: 15px;
+  color: #605d5d;
+}
+.job-menu li:first-child {
+  margin-left: 0;
+}
+.job-menu.job-menu-border li:last-child {
+	margin-left: 0;
+}
+.job-menu {
+  position: relative;
+}
+
+
+.job-menu-border-right li:after {
+  position: absolute;
+  background: #aaa;
+  width: 1px;
+  height: 11px;
+  content: "";
+  top: 9px;
+  margin-left: 5px;
+}
+.job-menu li:last-child:after {
+  background: transparent;
+}
+
+
+
+/*==================================================================================================
+                                         *Job application Two CSS Here*
+=====================================================================================================*/
+
+
+.job-application-two-info p {
+  font-size: 16px;
+  color: #666;
+}
+.job-application-two-info p span {
+  color: #58ba2b;
+  font-weight: 600;
+}
+.job-application-two-info a {
+  color: #58ba2b;
+  font-size: 17px;
+}
+.job-application-two {
+  margin-bottom: 50px;
+}
+
+/*================================================
+        *Job application Two Select CSS *
+============================================================*/
+
+.job-application-two-info .select,
+.job-application-two-info .select-2{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position:relative;
+  width:100%;
+  height:46px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.job-application-two-info .option,
+.job-application-two-info .option-2 {
+  padding:0 30px 0 10px;
+  min-height:40px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  background:#eee;
+  border-top:#222 solid 1px;
+  border-bottom:#222 solid 1px;
+  position:absolute;
+  top:0;
+  width: 100%;
+  pointer-events:none;
+  -webkit-box-ordinal-group:3;
+      -ms-flex-order:2;
+          order:2;
+  z-index:1;
+  -webkit-transition: background .4s ease-in-out;
+  transition:background .4s ease-in-out;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:nowrap;
+  
+  cursor: pointer;
+}
+
+
+.job-application-two-info .select:focus .option,
+.job-application-two-info .select-2:focus .option-2 {
+  position:relative;
+  pointer-events:all;
+}
+
+.job-application-two-info .select input,
+.job-application-two-info .select-2 input {
+  opacity:0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position:absolute;
+  left:-99999px;
+}
+
+.job-application-two-info .select  input:checked + label,
+.job-application-two-info .select-2  input:checked + label {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  z-index:2;
+  background:#fff;
+  border-top:none;
+  position:relative;
+  border: 1px solid #E3E3E3;
+  color: #808080;
+  padding: 11px;
+}
+
+.job-application-two-info .select  input:checked + label:after,
+.job-application-two-info .select-2  input:checked + label:after{
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  position:absolute;
+  right:15px;
+  top:calc(50% - 2.5px);
+  pointer-events:none;
+  z-index:3;
+}
+
+.job-application-two-info .select  input:checked + label:before ,
+.job-application-two-info .select-2  input:checked + label:before {
+  position:absolute;
+  right:0;
+  height: 40px;
+  width: 40px;
+  content: '';
+  background:#fff;
+}
+
+.job-application-two-info .option:hover, .job-application-two-info .option-2:hover {
+background: #58ba2b;
+color: #fff;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+
+}
+
+
+/*==========================================================
+   * application Info CSS *
+=============================================================*/
+
+.applicant-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.border-info-pd {
+  border: 1px solid #e1e1e1;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  margin-top: 30px;
+}
+.applicant-info {
+  position: absolute;
+  top: 20px;
+  left: 115px;
+}
+.applicant-info h3 {
+  font-size: 22px;
+  color: #58ba2b;
+  font-weight: 700;
+}
+.applicant-info h3 span {
+  display: block;
+  font-size: 16px;
+  color: #808080;
+  font-weight: 400;
+  margin-top: 3px;
+}
+.applicant-info h3 span a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #808080;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.applicant-info h3 span a:hover,.applicant-info h3 span a:hover .applicant-icon{
+  color: #58ba2b;
+}
+.applicant-icon {
+  margin-right: 5px;
+  color: #808080;
+}
+
+.active .applicant-icon{
+color: #fff;
+}
+
+/*==========================================================
+   * application Customize CSS *
+=============================================================*/
+
+.applicant-customize ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.applicant-customize ul li a {
+  display: block;
+  padding: 10px 20px;
+  background: #f1f1f1;
+  color: #888;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.applicant-icon-star{
+   color:#ffc000;
+
+}
+
+
+.applicant-border {
+  border: 1px solid #e1e1e1;
+  border-top: 0;
+  padding: 20px 40px;
+}
+.application-feeadback ul li {
+  display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.application-date ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.application-date ul li a {
+  color: #999;
+  font-size: 16px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.job-application-two.appcliant-details ul li a{
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+.job-application-two.appcliant-details ul li a:hover{
+  background: #58ba2b;
+  color: #fff;
+}
+
+.job-application-two.appcliant-details ul li a:hover .applicant-icon {
+    color: #fff;
+}
+.application-date ul li a {
+  padding: 10px 15px;
+}
+
+
+
+
+/*==========================================================
+   *            Resume Or About Page CSS Here*
+=============================================================*/
+.page-one.page-two.resume-hero {
+  height: 260px;
+}
+.resume-hero-left-btn li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 20px;
+}
+.resume-hero-left-btn li a {
+  background: #c0c0c0;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.resume-hero-left-btn li a:hover {
+  background: #58ba2b;
+}
+
+
+.resume-hero .resume-btn-hero-top-right {
+  width: 140px;
+  background: #58ba2b;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 46px;
+  margin-right: 116px;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+
+
+.resume-hero .resume-btn-hero-top-right:hover {
+  background: #444444;
+}
+
+.resume-des {
+  padding: 40px 0;
+  padding-bottom: 0;
+}
+
+
+/*==========================================================
+   * About-Sidebar-Area CSS *
+=============================================================*/
+
+
+.about-sidebar-area .author-content p {
+  font-size: 12px;
+  color: #888;
+  position: relative;
+  top: -18px;
+  margin-bottom: 0;
+}
+.about-sidebar-area .author-content h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.about-sidebar-area .author-content h3 span {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-sidebar-area .author-content p:last-child {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+
+/*==========================================================
+   * About-Author CSS *
+=============================================================*/
+.author-content {
+  position: relative;
+  padding-left: 15px;
+  border-left: 3px solid #eee;
+  margin-bottom: 22px;
+}
+.author-content:after {
+  position: absolute;
+  background: #eee;
+  width: 11px;
+  height: 11px;
+  content: "";
+  top: -18px;
+  left: -7px;
+  border-radius: 50%;
+}
+
+.about-sidebar-area {
+  margin-top: 38px;
+}
+
+
+/*==========================================================
+   * End The CSS *
+=============================================================*/
+
